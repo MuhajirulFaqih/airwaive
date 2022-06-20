@@ -1,0 +1,149 @@
+:root {
+    font-size: 14px;
+}
+::placeholder {
+    color: #79729A;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #79729A;
+}
+::-ms-input-placeholder {
+    color: #79729A;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #040D23 !important;
+    line-height: 24px !important;
+    color:#FFFFFF !important;
+    font-weight: 400 !important;
+}
+
+ul { list-style: none; }
+a, a:hover { text-decoration: none !important; }
+a { color: inherit !important; }
+.border-none { border: none !important; }
+.bg-transparent { background: transparent !important; }
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background: #0E0923;
+    color: #FFFFFF;
+    z-index: 5;
+    transition: all .5s;
+    margin-left: -350px;
+    overflow-y: auto;
+}
+.nav.active {
+    margin-left: 0;
+}
+.nav-toggle:before {
+    content: url("data:image/svg+xml,%3Csvg width='24' height='21' viewBox='0 0 24 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 3H0V0H24V3Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 12H0V9H24V12Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 21H0V18H24V21Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.nav-close:before {
+    content: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.9999 2.11114L2.1111 19L0 16.8889L16.8888 2.47078e-05L18.9999 2.11114Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.39324e-05 2.11114L16.8889 19L19 16.8889L2.11119 2.47078e-05L8.39324e-05 2.11114Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.nav-overlay {
+    transition: all .5s;
+}
+.nav-overlay.active {
+    background: rgba(25, 19, 57, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.nav a.active {
+    color: #DB7CF7 !important;
+}
+
+/* `sm` applies to small devices (landscape phones, less than 576px) */
+@media (min-width: 576px) {
+   
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+    .navigation {
+        overflow-y: auto;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+    :root {
+        font-size: 16px;
+    }
+    .nav { 
+        position: relative;
+        margin-left: 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: transparent;
+        transition: all .5s;
+    }
+    .nav.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 1em 2em .5em;
+        background: #0E0923;
+    }
+    .nav-overlay.active {
+        display: none;
+        position: relative;
+        background: transparent;
+    }
+    .logo-lg {
+        float: left;
+    }
+    .menu-lg {
+        display: inline-block;
+    }
+    .menu-lg li {
+        display: inline-block;
+        padding: 0px 5px;
+    }
+    .w-lg-logo {
+        width: 150px !important;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .menu-lg li {
+        display: inline-block;
+        padding: 0px 16px;
+    }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+        padding: 0;
+    }
+    .menu-lg li {
+        display: inline-block;
+    }
+}
+
+/* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
+@media (min-width: 1900px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+}
