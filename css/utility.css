@@ -14,6 +14,9 @@
 .bg-media {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
 }
+.bg-footer {
+    background: linear-gradient(180deg, rgba(4, 13, 35, 0) 0%, #040D23 49.36%);
+}
 .btn-1 {
     padding: 12px 24px;
 }
@@ -91,6 +94,9 @@
 .ls-minus-5 {
     letter-spacing: -0.05em;
 }
+.ls-minus-3 {
+    letter-spacing: -0.03em;
+}
 .overflow-hidden {
     overflow: hidden !important;
 }
@@ -109,8 +115,14 @@
 .lh-110percent {
     line-height: 110% !important;
 }
+.opacity-5 {
+    opacity: .5;
+}
 .opacity-6 {
     opacity: .6;
+}
+.opacity-7 {
+    opacity: .7;
 }
 .opacity-8 {
     opacity: .8;
@@ -189,6 +201,10 @@
         font-size: 24px;
         line-height: 36px;
     }
+    .fs-xl-25 {
+        font-size: 25px;
+        line-height: 39px;
+    }
     .fs-xl-28 {
         font-size: 28px;
         line-height: 34px;
@@ -208,6 +224,10 @@
     .fs-xl-56 {
         font-size: 56px;
         line-height: 68px;
+    }
+    .fs-xl-64 {
+        font-size: 64px;
+        line-height: 110%;
     }
     .fs-xl-88 {
         font-size: 80px;
@@ -230,6 +250,9 @@
     }
     .lh-xl-110percent {
         line-height: 110% !important;
+    }
+    .lh-xl-24 {
+        line-height: 24px !important;
     }
     .w-xl-16 {
         width: 16px;
