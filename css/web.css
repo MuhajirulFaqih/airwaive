@@ -74,6 +74,39 @@ a { color: inherit !important; }
     border: none;
     background: rgba(255, 255, 255, 0.08);
 }
+.bg-star {
+    background: url('../assets/img/bg-star.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.mesh {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+.mesh-hero {
+    background: url('../assets/img/mesh-1.svg');
+}
+.mesh-trusted {
+    background: url('../assets/img/mesh-2.svg');
+}
+.mesh-airwave {
+    background: url('../assets/img/mesh-3.svg');
+}
+.mesh-proof {
+    background: url('../assets/img/mesh-1.svg');
+}
+.mesh-milestone {
+    background: url('../assets/img/mesh-2.svg');
+}
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
    
@@ -126,6 +159,7 @@ a { color: inherit !important; }
     .w-lg-logo {
         width: 150px !important;
     }
+    
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
@@ -137,6 +171,44 @@ a { color: inherit !important; }
     .menu-lg li {
         display: inline-block;
         padding: 0px 16px;
+    }
+    .mesh-hero {
+        position: absolute;
+        width: 776px;
+        height: 899px;
+        right: -200px;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+    .mesh-trusted {
+        position: absolute;
+        width: 776px;
+        height: 899px;
+        left: -300px;
+        bottom: -50px;
+    }
+    .mesh-airwave {
+        position: absolute;
+        width: 1473px;
+        height: 1172px;
+        left: 50%;
+        top: 8%;
+        transform: translateX(-50%);
+    }
+    .mesh-proof {
+        position: absolute;
+        width: 776px;
+        height: 899px;
+        right: -200px;
+        bottom: 0%;
+        transform: translateY(-50%);
+    }
+    .mesh-milestone {
+        position: absolute;
+        width: 876px;
+        height: 999px;
+        left: -300px;
+        bottom: -250px;
     }
 }
 
