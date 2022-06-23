@@ -138,8 +138,8 @@ a { color: inherit !important; }
         position: fixed;
         top: 0;
         left: 0;
-        padding: 1em 2em .5em;
-        background: #0E0923;
+        padding: 1em 2em 1.5em;
+        background: #00030a;
     }
     .nav-overlay.active {
         display: none;
