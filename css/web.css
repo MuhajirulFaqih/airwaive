@@ -107,6 +107,44 @@ a { color: inherit !important; }
 .mesh-milestone {
     background: url('../assets/img/mesh-2.svg');
 }
+.mesh-hero {
+    position: absolute;
+    width: 776px;
+    height: 899px;
+    right: -400px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.mesh-trusted {
+    position: absolute;
+    width: 776px;
+    height: 899px;
+    left: -400px;
+    bottom: -50px;
+}
+.mesh-airwave {
+    position: absolute;
+    width: 1473px;
+    height: 1172px;
+    left: 50%;
+    top: 8%;
+    transform: translateX(-50%);
+}
+.mesh-proof {
+    position: absolute;
+    width: 776px;
+    height: 899px;
+    right: -400px;
+    bottom: 0%;
+    transform: translateY(-50%);
+}
+.mesh-milestone {
+    position: absolute;
+    width: 876px;
+    height: 999px;
+    left: -400px;
+    bottom: -180px;
+}
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
    
@@ -159,19 +197,6 @@ a { color: inherit !important; }
     .w-lg-logo {
         width: 150px !important;
     }
-    
-}
-
-/* `xl` applies to large devices (desktops, less than 1200px) */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-        margin: 0 auto;
-    }
-    .menu-lg li {
-        display: inline-block;
-        padding: 0px 16px;
-    }
     .mesh-hero {
         position: absolute;
         width: 776px;
@@ -209,6 +234,19 @@ a { color: inherit !important; }
         height: 999px;
         left: -300px;
         bottom: -250px;
+    }
+    
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .menu-lg li {
+        display: inline-block;
+        padding: 0px 16px;
     }
 }
 
