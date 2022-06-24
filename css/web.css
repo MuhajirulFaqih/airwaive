@@ -145,6 +145,22 @@ a { color: inherit !important; }
     left: -400px;
     bottom: -180px;
 }
+#partners-carousel {
+    position: relative;
+}
+#partners-carousel > .owl-nav > .owl-prev,
+#partners-carousel > .owl-nav > .owl-next
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#partners-carousel > .owl-nav > .owl-prev {
+    left: -32px;
+}
+#partners-carousel > .owl-nav > .owl-next {
+    right: -32px;
+}
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
    

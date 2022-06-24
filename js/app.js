@@ -18,7 +18,7 @@
         $('.nav-overlay').toggleClass('active')
     })
 
-    AOS.init({offset: 0, duration: 800});
+    AOS.init({ offset: 0, duration: 1000, delay: 100 });
 
 })(window.jQuery);
 
@@ -71,3 +71,33 @@ function onScroll() {
       }
     });
 }
+
+var owlSlider = $('#partners-carousel');
+owlSlider.owlCarousel({
+    navigation: true,
+    nav: true,
+    dots: false,
+    dotsEach: 1,
+    autoWidth: false,
+    loop: true,
+    navText : [ '<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"> <g opacity="0.4"> <path d="M25 30L15 20L25 10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/> </g> </svg> ', '<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"> <g opacity="0.4"> <path d="M15 30L25 20L15 10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/> </g> </svg> '],
+    center: false,
+    responsiveClass: true,
+    margin: 0,
+    items: 2,
+    smartSpeed: 300,
+    animateIn: 'ease-in-out',
+    animateOut: 'ease-in-out',
+    responsive: {
+        480: {
+            items: 2,
+        },
+        720: {
+            items: 3,
+        },
+        992: {
+            slideBy: 4,
+            items: 4
+        }
+    }
+});
