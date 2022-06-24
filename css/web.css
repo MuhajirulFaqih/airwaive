@@ -80,6 +80,7 @@ a { color: inherit !important; }
     background-repeat: no-repeat;
     background-position: center;
     position: fixed;
+    pointer-events: none;
     left: 0;
     right: 0;
     top: 0;
@@ -90,7 +91,8 @@ a { color: inherit !important; }
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: -1;
+    z-index: 0;
+    pointer-events: none;
 }
 .mesh-hero {
     background: url('../assets/img/mesh-1.svg');
