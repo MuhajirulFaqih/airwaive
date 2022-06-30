@@ -11,7 +11,6 @@
 ::-ms-input-placeholder {
     color: #394460;
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     background: #040D23 !important;
@@ -25,6 +24,10 @@ a, a:hover { text-decoration: none !important; }
 a { color: inherit !important; }
 .border-none { border: none !important; }
 .bg-transparent { background: transparent !important; }
+input, textarea {
+    outline: none;
+    border: none;
+}
 .nav {
     position: fixed;
     top: 0;
@@ -70,8 +73,6 @@ a { color: inherit !important; }
     position: relative;
 }
 .cta-input input {
-    outline: none;
-    border: none;
     background: rgba(255, 255, 255, 0.08);
 }
 .bg-star {
@@ -92,25 +93,19 @@ a { color: inherit !important; }
     background-repeat: no-repeat;
     background-position: center;
     z-index: 0;
+    position: absolute;
     pointer-events: none;
 }
-.mesh-hero {
+.mesh-hero, .mesh-proof, .mesh-contact, .mesh-team-2 {
     background: url('../assets/img/mesh-1.svg');
 }
-.mesh-trusted {
+.mesh-trusted, .mesh-milestone, .mesh-footer, .mesh-team {
     background: url('../assets/img/mesh-2.svg');
 }
 .mesh-airwave {
     background: url('../assets/img/mesh-3.svg');
 }
-.mesh-proof {
-    background: url('../assets/img/mesh-1.svg');
-}
-.mesh-milestone {
-    background: url('../assets/img/mesh-2.svg');
-}
 .mesh-hero {
-    position: absolute;
     width: 776px;
     height: 899px;
     right: -400px;
@@ -118,14 +113,12 @@ a { color: inherit !important; }
     transform: translateY(-50%);
 }
 .mesh-trusted {
-    position: absolute;
     width: 776px;
     height: 899px;
     left: -400px;
     bottom: -50px;
 }
 .mesh-airwave {
-    position: absolute;
     width: 1473px;
     height: 1172px;
     left: 50%;
@@ -133,7 +126,6 @@ a { color: inherit !important; }
     transform: translateX(-50%);
 }
 .mesh-proof {
-    position: absolute;
     width: 776px;
     height: 899px;
     right: -400px;
@@ -141,11 +133,36 @@ a { color: inherit !important; }
     transform: translateY(-50%);
 }
 .mesh-milestone {
-    position: absolute;
     width: 876px;
     height: 999px;
     left: -400px;
     bottom: -180px;
+}
+.mesh-team {
+    width: 776px;
+    height: 899px;
+    right: -400px;
+    top: 5%;
+    transform: translateY(-50%);
+}
+.mesh-team-2 {
+    width: 776px;
+    height: 899px;
+    left: -400px;
+    top: 30%;
+}
+.mesh-contact {
+    width: 776px;
+    height: 899px;
+    right: -400px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.mesh-footer {
+    width: 776px;
+    height: 899px;
+    left: -400px;
+    bottom: -50px;
 }
 #partners-carousel {
     position: relative;
@@ -162,6 +179,22 @@ a { color: inherit !important; }
 }
 #partners-carousel > .owl-nav > .owl-next {
     right: -32px;
+}
+.tabulation {
+    position: relative;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+.tabulation a.active {
+    font-weight: 600;
+    position: relative;
+}
+.tabulation a.active::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #333AA5;
+    position: absolute;
+    bottom: -72%;
 }
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
@@ -215,43 +248,37 @@ a { color: inherit !important; }
     .w-lg-logo {
         width: 150px !important;
     }
+    .h-lg-200 {
+        height: 200px;
+    }
     .mesh-hero {
-        position: absolute;
-        width: 776px;
-        height: 899px;
-        right: -200px;
-        top: 40%;
+        top: 10%;
         transform: translateY(-50%);
     }
     .mesh-trusted {
-        position: absolute;
-        width: 776px;
-        height: 899px;
         left: -300px;
         bottom: -50px;
     }
     .mesh-airwave {
-        position: absolute;
-        width: 1473px;
-        height: 1172px;
         left: 50%;
         top: 8%;
         transform: translateX(-50%);
     }
     .mesh-proof {
-        position: absolute;
-        width: 776px;
-        height: 899px;
         right: -200px;
         bottom: 0%;
         transform: translateY(-50%);
     }
     .mesh-milestone {
-        position: absolute;
-        width: 876px;
-        height: 999px;
         left: -300px;
-        bottom: -250px;
+        bottom: -180px;
+    }
+    .mesh-contact {
+        top: 50%;
+    }
+    .mesh-footer {
+        left: -300px;
+        bottom: -180px;
     }
     
 }

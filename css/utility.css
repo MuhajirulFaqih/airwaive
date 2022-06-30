@@ -8,6 +8,12 @@
 .bg-form {
     background: rgba(255, 255, 255, 0.08);
 }
+.bg-input {
+    background: rgba(255, 255, 255, 0.05);
+}
+.bg-contact-form {
+    background: linear-gradient(143.61deg, #0A1633 52.18%, #0A215A 102.65%);
+}
 .bg-contact {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.0075) 100%);
 }
@@ -17,6 +23,9 @@
 .bg-footer {
     background: linear-gradient(180deg, rgba(4, 13, 35, 0) 0%, #040D23 49.36%);
 }
+.bg-list {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+}
 .btn-1 {
     padding: 12px 24px;
 }
@@ -25,6 +34,20 @@
 }
 .text-grey {
     color: rgba(255, 255, 255, 0.8) !important;
+}
+.text-gradient {
+    background: linear-gradient(180deg, #6577FF 15.94%, #4C34AD 73.23%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.text-list {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 46.15%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 .c-pointer {
     cursor: pointer;
@@ -43,6 +66,9 @@
 }
 .fw-bold {
     font-weight: 700;
+}
+.fw-extrabold {
+    font-weight: 800;
 }
 .fs-14 {
     font-size: 14px;
@@ -88,6 +114,9 @@
     font-size: 80px;
     line-height: 96px;
 }
+.h-100px {
+    height: 100px;
+}
 .ls-2 {
     letter-spacing: 0.02em;
 }
@@ -96,6 +125,9 @@
 }
 .ls-minus-3 {
     letter-spacing: -0.03em;
+}
+.ls-minus-2 {
+    letter-spacing: -0.02em;
 }
 .overflow-hidden {
     overflow: hidden !important;
@@ -151,8 +183,14 @@
 .w-48 {
     width: 48px;
 }
+.w-56 {
+    width: 56px;
+}
 .w-80 {
     width: 80px;
+}
+.w-100px {
+    width: 100px;
 }
 .w-120 {
     width: 120px;
@@ -165,7 +203,7 @@
     z-index: -1;
 }
 .spacer {
-    margin: 80px 0;
+    margin: 60px 0;
 }
 
 /* End Utility */
@@ -387,7 +425,7 @@
         width: 120px;
     }
     .spacer {
-        margin: 100px 0;
+        margin: 80px 0;
     }
 }
 
@@ -411,6 +449,9 @@
     }
     .btn-lg-3 {
         padding: 24px 48px;
+    }
+    .form-lg-1 {
+        padding: 24px 32px;
     }
     .fs-lg-14 {
         font-size: 14px;
@@ -460,6 +501,10 @@
         font-size: 64px;
         line-height: 110%;
     }
+    .fs-lg-80 {
+        font-size: 80px;
+        line-height: 110%;
+    }
     .fs-lg-88 {
         font-size: 80px;
         line-height: 96px;
@@ -470,11 +515,17 @@
     .rounded-lg-16 {
         border-radius: 16px;
     }
+    .rounded-lg-20 {
+        border-radius: 20px;
+    }
     .rounded-lg-30 {
         border-radius: 30px;
     }
     .rounded-lg-40 {
         border-radius: 40px;
+    }
+    .rounded-lg-50 {
+        border-radius: 50px;
     }
     .rounded-lg-70 {
         border-radius: 70px;
@@ -484,6 +535,15 @@
     }
     .lh-lg-24 {
         line-height: 24px !important;
+    }
+    .lh-lg-26 {
+        line-height: 26px !important;
+    }
+    .lh-lg-28 {
+        line-height: 28px !important;
+    }
+    .lh-lg-32 {
+        line-height: 32px !important;
     }
     .w-lg-16 {
         width: 16px;
@@ -506,11 +566,17 @@
     .w-lg-100px {
         width: 100px;
     }
+    .h-lg-100px {
+        height: 100px;
+    }
+    .h-placeholder {
+        height: 560px;
+    }
     .mt-hero-text {
         margin-top: 64px;
     }
     .spacer {
-        margin: 80px 0;
+        margin: 60px 0;
     }
 }
 
@@ -524,7 +590,7 @@
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
     .spacer {
-        margin: 160px 0;
+        margin: 120px 0;
     }
     .container {
         max-width: 1140px;
