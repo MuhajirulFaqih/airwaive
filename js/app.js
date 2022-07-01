@@ -104,7 +104,12 @@ owlSlider.owlCarousel({
 var allTeam = $(".team-person .bg-box");
 var elemTeam = "";
 for (let index = 0; index < allTeam.length; index++) {
-    $('#team-carousel').append(allTeam[index]);
+    var elemHtml = $(allTeam[index]).html()
+    $('#team-carousel').append(`<div class="col-lg-4">
+        <div class="bg-box px-4 py-5 py-lg-4 py-xxl-5 rounded-24 rounded-lg-40 mb-5 text-center text-lg-start">
+            ${elemHtml}
+        </div>
+    </div>`);
 }
 
 var owlSlider = $('#team-carousel');
@@ -121,4 +126,19 @@ owlSlider.owlCarousel({
     stagePadding: 50,
     items: 1,
     smartSpeed: 300,
+    responsive: {
+        480: {
+            items: 2,
+            center: false,
+        },
+        720: {
+            items: 3,
+            center: false,
+        },
+        992: {
+            slideBy: 4,
+            items: 4,
+            center: false,
+        }
+    }
 });

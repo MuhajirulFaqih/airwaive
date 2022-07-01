@@ -212,6 +212,12 @@ input, textarea, button, a {
     .navigation {
         overflow-y: auto;
     }
+    .tabulation {
+        overflow: initial;
+    }
+    .tabulation > div {
+        width: auto;
+    }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -286,9 +292,6 @@ input, textarea, button, a {
     .mesh-footer {
         left: -300px;
         bottom: -180px;
-    }
-    .tabulation > div {
-        width: auto;
     }
 }
 
