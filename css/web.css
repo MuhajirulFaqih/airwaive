@@ -182,8 +182,14 @@ input, textarea, button, a {
 }
 .tabulation {
     position: relative;
+    width: 100%;
+    overflow-x: auto;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
 }
+.tabulation > div {
+    width: 800px;
+}
+
 .tabulation a.active {
     font-weight: 600;
     position: relative;
@@ -280,6 +286,9 @@ input, textarea, button, a {
     .mesh-footer {
         left: -300px;
         bottom: -180px;
+    }
+    .tabulation > div {
+        width: auto;
     }
 }
 
