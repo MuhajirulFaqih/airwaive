@@ -86,8 +86,6 @@ owlSlider.owlCarousel({
     margin: 0,
     items: 2,
     smartSpeed: 300,
-    animateIn: 'ease-in-out',
-    animateOut: 'ease-in-out',
     responsive: {
         480: {
             items: 2,
@@ -100,4 +98,27 @@ owlSlider.owlCarousel({
             items: 4
         }
     }
+});
+
+
+var allTeam = $(".team-person .bg-box");
+var elemTeam = "";
+for (let index = 0; index < allTeam.length; index++) {
+    $('#team-carousel').append(allTeam[index]);
+}
+
+var owlSlider = $('#team-carousel');
+owlSlider.owlCarousel({
+    navigation: false,
+    nav: false,
+    dots: false,
+    dotsEach: 1,
+    autoWidth: false,
+    loop: false,
+    center: true,
+    responsiveClass: true,
+    margin: 20,
+    stagePadding: 50,
+    items: 1,
+    smartSpeed: 300,
 });

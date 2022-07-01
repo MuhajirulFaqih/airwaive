@@ -24,7 +24,7 @@ a, a:hover { text-decoration: none !important; }
 a { color: inherit !important; }
 .border-none { border: none !important; }
 .bg-transparent { background: transparent !important; }
-input, textarea {
+input, textarea, button, a {
     outline: none;
     border: none;
 }
@@ -63,7 +63,7 @@ input, textarea {
     z-index: 3;
 }
 .nav a.active {
-    color: #DB7CF7 !important;
+    color: #FFFFFF !important;
 }
 .hr-footer {
     height: 0.5px !important;
@@ -213,6 +213,10 @@ input, textarea {
     :root {
         font-size: 16px;
     }
+    .container-in-lg, .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
     .nav { 
         position: relative;
         margin-left: 0;
@@ -248,9 +252,6 @@ input, textarea {
     .w-lg-logo {
         width: 150px !important;
     }
-    .h-lg-200 {
-        height: 200px;
-    }
     .mesh-hero {
         top: 10%;
         transform: translateY(-50%);
@@ -280,12 +281,11 @@ input, textarea {
         left: -300px;
         bottom: -180px;
     }
-    
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
-    .container {
+    .container-in-lg, .container {
         max-width: 1140px;
         margin: 0 auto;
     }
@@ -297,7 +297,7 @@ input, textarea {
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
-    .container {
+    .container-in-lg, .container {
         max-width: 1200px;
         padding: 0;
     }
@@ -308,7 +308,7 @@ input, textarea {
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
-    .container {
+    .container-in-lg, .container {
         max-width: 1200px;
     }
     
