@@ -621,7 +621,7 @@
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
     .spacer {
-        margin: 120px 0;
+        margin: 80px 0;
     }
     .container {
         max-width: 1140px;
